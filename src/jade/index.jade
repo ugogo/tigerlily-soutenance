@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    link(rel="stylesheet", href="css/app.css")
+
+  body
+    .slides-container
+      .slide.slide--1.slide--darker(data-animation="fadeInLeft")
+        .slide-content
+          h1 Slide 1
+      .slide.slide--2.slide--lighter(data-animation="zoomInUp")
+        .slide-content
+          h1 Slide 2
+
+    script(src="js/libs/zepto.min.js")
+    script(src="js/app.js")
