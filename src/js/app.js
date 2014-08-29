@@ -10,8 +10,9 @@ $(function(){
     $el: $('.slide'),
     counter: 0,
 
-    init: function(cb){
+    init: function(){
       var slidesLength = this.$el.length;
+      this.slidesLength = slidesLength;
 
       // set container size
       this.$container.width( slidesLength * this.body_width );
@@ -23,13 +24,29 @@ $(function(){
           'z-index': (slidesLength - i) * 10
         });
       });
-
-      if(cb) cb();
     }
   };
 
-  Slides.init(function(){
-    // ready to do stuff
+  Slides.init();
 
+  // keyboard navigation
+  $doc.on('keydown', function(e){
+    var dir;
+    var canAnim;
+    var keyCode = e.keyCode;
+
+    if(keyCode === 39){
+      dir = 'next';
+      canAnim = (Slides.counter < Slides.slidesLength - 1);
+    }
+    else if(keyCode === 37){
+      dir = 'prev';
+      canAnim = (Slides.counter > 0);
+    }
+
+    if(canAnim && !animationRunning){
+      animationRunning = true;
+      // do stuff
+    }
   });
 });
