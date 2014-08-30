@@ -3,30 +3,12 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     link(rel="stylesheet", href="css/app.css")
-
   body
     .slides-container
-      .slide.slide--1.slide--current.slide--darker(data-animation="fadeInLeft")
-        .slide-content
-          h1 Soutenance de stage
-            span Onali ugo - tw 2014
-          img.studio-logo(src="images/studio-logo.png", width="170")
-          img.cifacom-logo(src="images/cifacom-logo-white.png", width="150")
-      .slide.slide--2.slide--lighter(data-animation="zoomInUp")
-        .slide-content
-          h1 Slide 2
-          h2 Ow h2 !
-          h3 And h3 ! Omg, amazing
-      .slide.slide--3.slide--lighter(data-animation="fadeInLeft")
-        .slide-content
-          h1 Slide 3
-          h2 Ow h2 !
-          h3 And h3 ! Omg, amazing
-      .slide.slide--4.slide--lighter(data-animation="zoomInUp")
-        .slide-content
-          h1 Slide 4
-          h2 Ow h2 !
-          h3 And h3 ! Omg, amazing
+      include partials/slide-1
+      include partials/slide-2
+      include partials/slide-3
+      include partials/slide-4
 
     script(src="js/libs/zepto.min.js")
     script(src="js/app.js")
