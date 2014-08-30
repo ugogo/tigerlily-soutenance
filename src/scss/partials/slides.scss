@@ -42,7 +42,7 @@ h3 {
     animation-fill-mode: forwards;
     @include pos(a, 0,0,0,0);
   }
-  
+
     .slide-content {
       display: table-cell;
       vertical-align: middle;
@@ -77,16 +77,30 @@ h3 {
   .slide--current {
     opacity: 1;
   }
+
   .slide--1 {
-    img {
+    .cifacom-logo {
       display: block;
-      margin-left: auto;
-      margin-right: auto;
-      &.studio-logo {
-        margin-top: 60px;
-        margin-bottom: 35px;
+      margin: 40px auto 0 auto;
+    }
+  }
+
+  .slide--2 {
+    .tl-products-container {
+      margin-top: 4em;
+    }
+    .tl-product {
+      margin-left: 6em;
+      &:first-child {
+        margin-left: 0;
+      }
+      h2 {
+        font-size: 1em;
+        color: $orange;
       }
     }
   }
+
+
 
 
