@@ -37,9 +37,12 @@ h3 {
     display: table;
     height: 100%;
     text-align: center;
+    opacity: 0;
     transition: all .3s ease-out;
+    animation-fill-mode: forwards;
     @include pos(a, 0,0,0,0);
   }
+  
     .slide-content {
       display: table-cell;
       vertical-align: middle;
@@ -71,6 +74,9 @@ h3 {
 
 
 // Specific
+  .slide--current {
+    opacity: 1;
+  }
   .slide--1 {
     img {
       display: block;
