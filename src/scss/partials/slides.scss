@@ -50,25 +50,20 @@ h3 {
 
 
 // Themes
-  .slide--darker {
-    background-color: $violet;
-    h1 {
-      color: #fff;
-      span {
-        opacity: .7;
-      }
-    }
-  }
-  .slide--lighter {
+  h1 { color: $red; }
+  h2 { color: $blue--dark; }
+  h3 { color: $blue--light; }
+
+  .slide {
     background-color: #fff;
-    h1 {
-      color: $red;
-    }
-    h2 {
-      color: $blue--dark;
-    }
-    h3 {
-      color: $blue--light;
+    &.slide--darker {
+      background-color: $violet;
+      h1 {
+        color: #fff;
+        span {
+          opacity: .7;
+        }
+      }
     }
   }
 
@@ -82,24 +77,22 @@ h3 {
   .slide--1 {
     .cifacom-logo {
       display: block;
-      margin: 40px auto 0 auto;
+      margin: 40px auto 30px auto;
     }
   }
 
-  .slide--2 {
-    .tl-products-container {
-      margin-top: 4em;
+  .tl-products-container {
+    margin-top: 4em;
+  }
+  .tl-product {
+    margin-left: 6em;
+    &:first-child {
+      margin-left: 0;
     }
-    .tl-product {
-      margin-left: 6em;
-      &:first-child {
-        margin-left: 0;
-      }
-      h2 {
-        font-size: 1em;
-        color: $orange;
-      }
-    }
+  }
+  .tl-product-title {
+    font-size: 1em;
+    color: $orange;
   }
 
 
