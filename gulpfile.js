@@ -125,6 +125,10 @@ var del = require('del'),
     return gulp.src('./src/fonts/**')
       .pipe(gulp.dest('./dist/fonts/'))
   });
+  gulp.task('build-fonts', function(){
+    return gulp.src('./src/fonts/**')
+      .pipe(gulp.dest('./dist/fonts/'))
+  });
 
 // imgs tasks
   gulp.task('dev-imgs', function (){
@@ -179,5 +183,6 @@ var del = require('del'),
     'build-html',
     'build-css',
     'build-js',
-    'build-imgs'
+    'build-imgs',
+    'build-fonts'
   ]);
