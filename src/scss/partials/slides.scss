@@ -38,7 +38,7 @@ h3 {
     height: 100%;
     text-align: center;
     opacity: 0;
-    transition: all .3s ease-out;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     @include pos(a, 0,0,0,0);
   }
@@ -74,7 +74,8 @@ h3 {
 
 
 // Specific
-  .slide--current {
+  .is-current,
+  .slide-child.is-show {
     opacity: 1;
   }
 
@@ -99,6 +100,14 @@ h3 {
         color: $orange;
       }
     }
+  }
+
+
+// Subslide
+  .slide-child {
+    opacity: 0;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
   }
 
 
