@@ -46,12 +46,12 @@ $(function(){
       var self = this;
       var animClass = $el.attr('data-animation');
 
-      $el.addClass(animClass+ ' animated');
-
-      setTimeout(function(){
-        $el.toggleClass('is-show animated '+ animClass);
-        animationRunning = false;
-      }, 600);
+      $el.addClass(animClass+ ' animated')
+        .bind('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(){
+          $el.toggleClass('is-show animated '+ animClass);
+          animationRunning = false;
+          $el.unbind();
+        });
     },
     animSlide: function(dir){
       var self = this;
@@ -69,19 +69,18 @@ $(function(){
 
       var nextSlideAnimation = $nextSlide.attr('data-animation');
 
-      $currentSlide.addClass('fadeOut animated');
       $nextSlide.addClass(nextSlideAnimation + ' is-current animated');
 
-      setTimeout(function(){
-        $currentSlide.removeClass('fadeOut animated is-current')
-          .find('.slide-child.is-show')
-            .removeClass('is-show');
-
-        $nextSlide.removeClass(nextSlideAnimation + ' animated');
-
-        self.updateCurrent();
-        animationRunning = false;
-      }, 1000);
+      $currentSlide.addClass('fadeOut animated')
+        .bind('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(){
+          $currentSlide.removeClass('fadeOut animated is-current')
+            .find('.slide-child.is-show')
+              .removeClass('is-show');
+          $nextSlide.removeClass(nextSlideAnimation + ' animated');
+          self.updateCurrent();
+          animationRunning = false;
+          $currentSlide.unbind();
+        });
     }
   };
 
