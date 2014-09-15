@@ -1,14 +1,20 @@
 #Tigerlily final exam
 
 ## Plan
-* Slide #1
-Home
+***Slide #1 - Home***
 
-* Slide #2
-Tigerlily's principal products
+* Résumé
 
-* Slide #3
-Sleek
+***Slide #2 - Tigerlily's principal products***
 
-* Slide #4
-Studio
+* Conversation
+* Insigts
+* AppBuilder
+
+***Slide #3 - New products***
+
+* Sleek
+
+***Slide #4 - New products***
+
+* Studio
