@@ -5,10 +5,36 @@ html(lang="en")
     link(rel="stylesheet", href="css/app.css")
   body
     .slides-container
-      include partials/slide-1
-      include partials/slide-2
-      include partials/slide-3
-      include partials/slide-4
+      
+      .slide.slide--1.slide--darker.is-current(data-animation="fadeIn")
+        .slide-content
+          h1 Soutenance de stage
+            span Onali ugo - tw 2014
+          img.cifacom-logo(src="imgs/cifacom/logo--white.png", width="150")
+          img.tl-logo(src="imgs/tigerlily/logo-2.png", width="90")
+
+      .slide.slide--2.slide--lighter(data-animation="zoomIn")
+        .slide-content
+          img.tl-logo(src="imgs/tigerlily/logo-1.gif", width="300")
+          ul.tl-products-container
+            li.tl-product.slide-child(data-animation="bounceIn")
+              img.tl-product-img.conversation-logo(src="imgs/tigerlily/products/conversation.svg")
+              h2.tl-product-title Conversation
+            li.tl-product.slide-child(data-animation="bounceIn")
+              img.tl-product-img.insights-logo(src="imgs/tigerlily/products/insights.svg")
+              h2.tl-product-title Insights
+            li.tl-product.slide-child(data-animation="bounceIn")
+              img.tl-product-img.appbuilder-logo(src="imgs/tigerlily/products/appbuilder.svg")
+              h2.tl-product-title Appbuilder
+
+      .slide.slide--3.slide--lighter(data-animation="fadeIn")
+        .slide-content
+          img.sl-logo(src="imgs/sleek/logo--white.png", width="130")
+          img.sl-apercu.slide-child(src="imgs/sleek/workflow.png", data-animation="fadeInUp")
+
+      .slide.slide--4.slide--lighter(data-animation="zoomInUp")
+        .slide-content
+          img.studio-logo(src="imgs/studio/logo--violet.gif", width="200")
 
     script(src="js/libs/zepto.min.js")
     script(src="js/app.js")
