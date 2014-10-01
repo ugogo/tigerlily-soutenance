@@ -93,6 +93,10 @@ img {
     }
   }
 
+  .slide-title.header {
+    @include pos(a, 10%, 0, x, 0);
+  }
+
   .slide--1 {
     .cf-logo {
       margin-top: 3em;
@@ -133,44 +137,17 @@ img {
   }
 
   .slide--5 {
-    .product {
-      width: 20%;
-
-      img {
-        width: 80%;
-      }
-      h2 {
-        color: $grey--blue;
-      }
-      &:last-of-type {
-        display: block;
-        margin: 2em auto 0 auto;
-        h2 {
-          color: $red;
-        }
-      }
+    img {
+      width: 60%;
     }
   }
 
   .slide--6 {
-    .product {
-      max-width: inherit;
-      margin: 0;
-      width: 25%;
+    .grid-el {
       vertical-align: middle;
       img {
         width: 50%;
       }
-      &:last-of-type {
-        display: block;
-        margin: 2em auto 0 auto;
-        h2 {
-          color: $red;
-        }
-      }
-    }
-    .product-title {
-      color: $grey--blue;
     }
     .workflow-sep {
       display: inline-block;
@@ -180,13 +157,13 @@ img {
 
 // products list
   .products-container{
-    margin-top: 4em;
+    max-width: 1000px;
+    margin: 4em auto 0 auto;
   }
   .product {
     display: inline-block;
     max-width: 30%;
     margin-left: 3%;
-
     &:first-child {
       margin-left: 0;
     }
@@ -194,6 +171,27 @@ img {
   .product-title {
     font-size: 1em;
   }
+
+
+// grid
+.grid-3-1 {
+  @extend .products-container;
+  padding-top: 3em;
+  h2 {
+    color: $grey--blue;
+  }
+  .grid-el {
+    @extend .product;
+    width: 25%;
+    &:last-of-type {
+      display: block;
+      margin: 2em auto 0 auto;
+      h2 {
+        color: $blue--dark;
+      }
+    }
+  }
+}
 
 
 // Subslide
