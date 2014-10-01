@@ -25,18 +25,19 @@
 
 
 ***Slide #5 - Studio***
-* Team
-* Products (Facebook app desktop/mobile/iframe)
+* Products (Facebook app desktop/mobile/iframe, ads)
 
 
 ***Slide #6 - Studio***
-* Process
+* Workflow
  
 
 ***Slide #7 - Studio***
-* App examples
+* AppBuilder
+* Plugins
+* Default theme
 
 
-***Slide #8 - Project detail***
-* ...
+***Slide #8 - Hull***
+* Idea
  
