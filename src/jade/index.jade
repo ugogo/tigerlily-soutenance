@@ -16,16 +16,16 @@ html(lang="en")
       .slide.slide--2.slide--lighter(data-animation="zoomIn")
         .slide-content
           img.tl-logo(src="imgs/tigerlily/logo-1.gif", width="300")
-          ul.tl-products-container
-            li.tl-product.slide-child(data-animation="bounceIn")
-              img.tl-product-img.conversation-logo(src="imgs/tigerlily/products/conversation.svg")
-              h2.tl-product-title Conversation
-            li.tl-product.slide-child(data-animation="bounceIn")
-              img.tl-product-img.insights-logo(src="imgs/tigerlily/products/insights.svg")
-              h2.tl-product-title Insights
-            li.tl-product.slide-child(data-animation="bounceIn")
-              img.tl-product-img.appbuilder-logo(src="imgs/tigerlily/products/appbuilder.svg")
-              h2.tl-product-title Appbuilder
+          ul.products-container
+            li.product.slide-child(data-animation="bounceIn")
+              img(src="imgs/tigerlily/products/conversation.svg")
+              h2.product-title.tl-product-title Conversation
+            li.product.slide-child(data-animation="bounceIn")
+              img(src="imgs/tigerlily/products/insights.svg")
+              h2.product-title.tl-product-title Insights
+            li.product.slide-child(data-animation="bounceIn")
+              img(src="imgs/tigerlily/products/appbuilder.svg")
+              h2.product-title.tl-product-title Appbuilder
 
       .slide.slide--3.slide--lighter(data-animation="zoomIn")
         .slide-content
@@ -36,9 +36,23 @@ html(lang="en")
         .slide-content
           img.studio-logo(src="imgs/studio/logo--violet.gif", width="250")
           img.img-b.fb-logo.slide-child(data-animation="bounceIn", src="imgs/fb-logo--blue--144.png", width="130")
-          //- img(src="imgs/studio/ads.svg", height="180")
 
-      .slide.slide--5.slide--lighter(data-animation="zoomInUp")
+      .slide.slide--5.slide--lighter(data-animation="fadeInLeft")
+        .slide-content
+          img.studio-logo(src="imgs/studio/logo--violet.gif", width="250")
+          .products-container
+            .product.slide-child(data-animation="bounceIn")
+              img(src="imgs/studio/app-desktop.png")
+              h2.product-title Desktop
+            .product.slide-child(data-animation="bounceIn")
+              img(src="imgs/studio/app-mobile.png")
+              h2.product-title Mobile
+            .product.slide-child(data-animation="bounceIn")
+              img(src="imgs/studio/app-iframe.png")
+              h2.product-title Iframe
+            .product.slide-child(data-animation="fadeInRight")
+              img(src="imgs/studio/app-ads.png")
+              h2.product-title Advertising
 
     script(src="js/libs/zepto.min.js")
     script(src="js/app.js")

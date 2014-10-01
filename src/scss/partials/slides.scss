@@ -1,7 +1,9 @@
 
 .slides-container {
   position: relative;
+  max-width: 1000px;
   height: 100%;
+  margin: 0 auto;
   font-family: opensans;
 }
 
@@ -48,6 +50,7 @@ img {
   }
 
     .slide-content {
+      position: relative;
       display: table-cell;
       vertical-align: middle;
       padding: 2em;
@@ -94,6 +97,18 @@ img {
     }
   }
 
+  .slide--2 {
+    .products-container {
+    }
+    .product {
+      width: 20%;
+      min-width: 150px;
+    }
+    .product-title {
+      color: $orange;
+    }
+  }
+
   .slide--3 {
     .slide-content {
       background-color: #4EC6C6;
@@ -114,26 +129,46 @@ img {
     }
   }
 
+  .slide--5 {
+    .studio-logo {
+      width: 120px;
+      @include pos(a, 2em, x, x, 2em);
+    }
+    .product {
+      width: 20%;
 
-  .tl-products-container,
-  .products-container {
+      img {
+        width: 80%;
+      }
+      h2 {
+        color: #a3a6aa;
+      }
+      &:last-of-type {
+        display: block;
+        margin: 2em auto 0 auto;
+        h2 {
+          color: $red;
+        }
+      }
+    }
+  }
+
+
+// products list
+  .products-container{
     margin-top: 4em;
   }
-  .tl-product,
   .product {
+    display: inline-block;
+    max-width: 30%;
+    margin-left: 3%;
+
     &:first-child {
       margin-left: 0;
     }
   }
-  .product {
-    margin-left: 3em;
-  }
-  .tl-product {
-    margin-left: 6em;
-  }
-  .tl-product-title {
+  .product-title {
     font-size: 1em;
-    color: $orange;
   }
 
 
