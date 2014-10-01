@@ -81,7 +81,8 @@ img {
 
   .sl-logo,
   .tl-logo,
-  .cf-logo {
+  .cf-logo,
+  .img-b {
     display: block;
     margin: 0 auto;
   }
@@ -109,10 +110,14 @@ img {
 
   .slide--4 {
     .studio-logo {
-      max-width: 200px;
+      max-width: 250px;
       width: 25%;
     }
+    .fb-logo {
+      margin-top: 3em;
+    }
   }
+
 
   .tl-products-container,
   .products-container {
