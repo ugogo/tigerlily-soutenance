@@ -82,12 +82,16 @@ img {
     opacity: 1;
   }
 
-  .sl-logo,
+  .st-logo,
   .tl-logo,
   .cf-logo,
   .img-b {
     display: block;
     margin: 0 auto;
+    &.header {
+      width: 120px;
+      @include pos(a, 2em, x, x, 2em);
+    }
   }
 
   .slide--1 {
@@ -130,10 +134,6 @@ img {
   }
 
   .slide--5 {
-    .studio-logo {
-      width: 120px;
-      @include pos(a, 2em, x, x, 2em);
-    }
     .product {
       width: 20%;
 
@@ -150,6 +150,31 @@ img {
           color: $red;
         }
       }
+    }
+  }
+
+  .slide--6 {
+    .product {
+      max-width: inherit;
+      margin: 0;
+      width: 25%;
+      vertical-align: middle;
+      img {
+        width: 50%;
+      }
+      &:last-of-type {
+        display: block;
+        margin: 2em auto 0 auto;
+        h2 {
+          color: $red;
+        }
+      }
+    }
+    .product-title {
+      color: $grey--blue;
+    }
+    .workflow-sep {
+      display: inline-block;
     }
   }
 

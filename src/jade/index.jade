@@ -39,7 +39,7 @@ html(lang="en")
 
       .slide.slide--5.slide--lighter(data-animation="fadeInLeft")
         .slide-content
-          img.studio-logo(src="imgs/studio/logo--violet.gif", width="250")
+          img.st-logo.header(src="imgs/studio/logo--violet.gif", width="250")
           .products-container
             .product.slide-child(data-animation="bounceIn")
               img(src="imgs/studio/app-desktop.png")
@@ -53,6 +53,29 @@ html(lang="en")
             .product.slide-child(data-animation="fadeInRight")
               img(src="imgs/studio/app-ads.png")
               h2.product-title Advertising
+
+      .slide.slide--6.slide--lighter(data-animation="fadeIn")
+        .slide-content
+          img.st-logo.header(src="imgs/studio/logo--violet.gif", width="250")
+          h1.workflow-title Workflow
+          .products-container
+            .product.slide-child(data-animation="bounceIn")
+              img(src="imgs/studio/workflow-brainstorming.png", width="200")
+              h2.product-title brainstorming
+            .slide-child.workflow-sep(data-animation="fadeIn")
+              img(src="imgs/studio/workflow-sep.png", width="50")
+            .product.slide-child(data-animation="bounceIn")
+              img(src="imgs/studio/workflow-wireframes.png", width="200")
+              h2.product-title wireframes
+            .slide-child.workflow-sep(data-animation="fadeIn")
+              img(src="imgs/studio/workflow-sep.png", width="50")
+            .product.slide-child(data-animation="bounceIn")
+              img(src="imgs/studio/workflow-design.png", width="200")
+              h2.product-title design
+            .product.slide-child(data-animation="fadeInRight")
+              img(src="imgs/studio/workflow-front.png", width="200")
+              h2.product-title front-end development
+
 
     script(src="js/libs/zepto.min.js")
     script(src="js/app.js")
