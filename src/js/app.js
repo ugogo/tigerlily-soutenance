@@ -87,7 +87,7 @@ $(function(){
     var dir;
     var canAnim = false;
     var keyCode = e.keyCode;
-
+    var hasChild = Slides.$el_current.find('.slide-child').not('.is-show').length > 0;
     if(keyCode === 39){
       dir = 'next';
       canAnim = (Slides.el_counter < Slides.slidesLength - 1);
@@ -97,7 +97,7 @@ $(function(){
       canAnim = (Slides.el_counter > 0);
     }
 
-    if(canAnim && !animationRunning){
+    if(!animationRunning && (canAnim || hasChild)){
       animationRunning = true;
       Slides.animCtrl(dir);
     }
