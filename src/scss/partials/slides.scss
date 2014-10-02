@@ -84,6 +84,7 @@ img {
   .st-logo,
   .tl-logo,
   .cf-logo,
+  .h-logo,
   .img-b {
     display: block;
     margin: 0 auto;
@@ -155,16 +156,6 @@ img {
   }
 
   .slide--7 {
-    .list {
-      margin-top: 6em;
-    }
-    .list-item {
-      font-size: 2em;
-      color: $grey--blue;
-      &::before {
-        content: "- ";
-      }
-    }
   }
 
   .slide--8 {
@@ -228,11 +219,16 @@ img {
   .list {
     text-align: left;
     width: 40%;
-    margin: 0 auto;
+    margin: 4em auto 0 auto;
   }
     .list-item {
       display: block;
       padding-bottom: 1em;
+      font-size: 2em;
+      color: $grey--blue;
+      &::before {
+        content: "- ";
+      }
     }
 
 
