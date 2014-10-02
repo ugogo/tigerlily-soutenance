@@ -1253,6 +1253,23 @@ Copyright (c) 2013 Daniel Eden
   animation-name: fadeInLeft;
 }
 
+@keyframes fadeInLeftSmall {
+  0% {
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeftSmall {
+  -webkit-animation-name: fadeInLeftSmall;
+  animation-name: fadeInLeftSmall;
+}
+
 @-webkit-keyframes fadeInLeftBig {
   0% {
     opacity: 0;
