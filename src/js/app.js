@@ -88,11 +88,12 @@ $(function(){
     var canAnim = false;
     var keyCode = e.keyCode;
     var hasChild = Slides.$el_current.find('.slide-child').not('.is-show').length > 0;
-    if(keyCode === 39){
+
+    if(keyCode === 39 || keyCode === 78){
       dir = 'next';
       canAnim = (Slides.el_counter < Slides.slidesLength - 1);
     }
-    else if(keyCode === 37){
+    else if(keyCode === 37 || keyCode === 80){
       dir = 'prev';
       canAnim = (Slides.el_counter > 0);
     }
